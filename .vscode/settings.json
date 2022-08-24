@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "src",
+        ".vscode"
+    ],
+    "java.project.outputPath": "bin"
+}
