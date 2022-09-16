@@ -13,7 +13,6 @@ public class ContainsDup {
 
     // O(N) space - O(N)
     static boolean containsDuplicate2(int[] nums) {
-
         final Set<Integer> distinct = new HashSet<Integer>();
         for (int num : nums) {
             if (distinct.contains(num)) {
@@ -26,7 +25,6 @@ public class ContainsDup {
 
     // O(n logn) space - O(1)
     static boolean containsDuplicate(int[] nums) {
-
         Arrays.sort(nums);
         for (int i = 0; i < nums.length - 1; i++) {
             if (nums[i] == nums[i + 1]) {

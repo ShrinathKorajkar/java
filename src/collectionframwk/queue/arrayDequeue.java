@@ -2,6 +2,13 @@ package collectionframwk.queue;
 
 import java.util.ArrayDeque;
 
+/* 
+    extraMethods : peek, offer, poll, Element
+    usage : stack -> push, pop, peek
+    queue -> offer, poll, peek
+    dequeue -> offerfirst, last
+*/
+
 public class arrayDequeue {
     public static void main(String[] args) {
 
@@ -17,7 +24,7 @@ public class arrayDequeue {
         // peek elements
         System.out.println(deque.peekFirst());
         System.out.println(deque.peekLast());
-        System.out.println(deque.peekFirst());
+        System.out.println(deque.peek());
         System.out.println(deque);
 
         // remove elements

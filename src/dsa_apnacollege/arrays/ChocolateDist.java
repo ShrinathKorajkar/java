@@ -12,23 +12,17 @@ import java.util.Arrays;
 public class ChocolateDist {
 
     static int findMinDif(int[] arr, int n, int m) {
-
         if (n == 0 || m == 0)
             return 0;
-
         Arrays.sort(arr);
-
         if (n < m)
             return -1;
-
         int minDif = Integer.MAX_VALUE;
-
         for (int i = 0; i + m - 1 < n; i++) {
             if (arr[i + m - 1] - arr[i] < minDif) {
                 minDif = arr[i + m - 1] - arr[i];
             }
         }
-
         return minDif;
     }
 

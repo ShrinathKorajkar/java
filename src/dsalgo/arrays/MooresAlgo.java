@@ -23,8 +23,8 @@ public class MooresAlgo {
                 count--;
 
             if (count == 0) {
-                count++;
                 majElem = arr[i];
+                count++;
             }
         }
 

@@ -1,22 +1,16 @@
-iterable -> Collection -> List , Queue, Set             Map             (all are interfaces, collections class is also available)
-
+iterable -> Collection -> List , Queue, Set             Map             
+(all are interfaces, collections class is also available)
 
 
 
 List -> ArrayList, LinkedList, Vector -> Stack
-
 Queue -> PriorityQueue, LinkedList, Deque -> ArrayDeque
-
 Set -> HashSet, LinkedHashSet, SortedSet -> TreeSet
-
 Map -> HashMap, LinkedHashMap, SortedMap -> TreeMap, HashTable
 
 
-
-methods -> add, size, remove, iterate, addAll, removeAll, clear
+methods -> add, remove, size, isEmpty, contains, iterator, addAll, removeAll, retainAll, clear, toArray
 goto arrayList.java for all methods.
-
-
 
 
 

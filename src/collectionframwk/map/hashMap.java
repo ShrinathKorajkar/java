@@ -3,6 +3,10 @@ package collectionframwk.map;
 import java.util.HashMap;
 import java.util.Map;
 
+/* 
+    extra : put, get, putAll, containsKey, containsValue, keySet, values, entrySet -> getKey, getValue
+*/
+
 public class hashMap {
     public static void main(String[] args) {
 

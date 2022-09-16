@@ -16,9 +16,9 @@ public class studentHashSet {
         studentsSet.add(new Students("Shri", 21));
         studentsSet.add(new Students("Prc", 22));
         studentsSet.add(new Students("Teju", 23));
-        studentsSet.add(new Students("Ruthika", 24));
-        studentsSet.add(new Students("Ruthika", 24));
-        studentsSet.add(new Students("Ruthika", 14));
+        studentsSet.add(new Students("Ruti", 24));
+        studentsSet.add(new Students("Ruti", 24));
+        studentsSet.add(new Students("Ruti", 14));
 
         System.out.println(studentsSet);
 

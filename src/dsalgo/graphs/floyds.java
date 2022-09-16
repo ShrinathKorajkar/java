@@ -1,7 +1,8 @@
-package dsalgo;
+package dsalgo.graphs;
 
 import java.util.Scanner;
 
+// ALL SOURCE SHORTEST PATHS
 public class floyds {
 
 	static void floyd(int a[][], int n) {
@@ -23,7 +24,7 @@ public class floyds {
 		int a[][] = new int[10][10];
 		int i, j;
 		Scanner in = new Scanner(System.in);
-		System.out.println("***********FLOYD'SALGORITHM**********");
+		System.out.println("*********** FLOYD'S ALGORITHM **********");
 		int n = 4;
 		System.out.println("Enter the adjacency matrix");
 		for (i = 1; i <= n; i++)

@@ -19,7 +19,6 @@ public class minMax {
             Pair.max = arr[0];
             return Pair;
         }
-
         if (arr[0] < arr[1]) {
             Pair.min = arr[0];
             Pair.max = arr[1];
@@ -27,7 +26,6 @@ public class minMax {
             Pair.min = arr[1];
             Pair.max = arr[0];
         }
-
         for (int i = 2; i < length; i++) {
             if (arr[i] < Pair.min) {
                 Pair.min = arr[i];
@@ -35,7 +33,6 @@ public class minMax {
                 Pair.max = arr[i];
             }
         }
-
         return Pair;
     }
 

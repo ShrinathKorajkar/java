@@ -3,6 +3,7 @@ package dsalgo.arrays;
 /*                    
     given blocks height find amount of blocks rainWaterTrap
     array preprocessing
+    O(n)
 */
 public class rainWaterTrap {
 

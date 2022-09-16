@@ -2,6 +2,8 @@ package dsalgo.basics;
 
 /*
     compute : (a + b) % n = (a % n + b % n) % n
+    in case of large number use modulo arithmetic in every a + b
+    similarly for -, * but not /
     (ans)^b = ()10^9 + 7
 
     to find power( O(log n) )

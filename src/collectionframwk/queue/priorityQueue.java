@@ -8,6 +8,8 @@ import java.util.Queue;
     add(), element(), remove() -> return exeception if cannot do anything
     offer(), peek(), poll() -> return false, null if cannot do
     Uses min heap to store elements -> smallest element first (all operation are in log(n))
+
+    we can use Collections.reverseOrder() to emplement max heap
 */
 public class priorityQueue {
     public static void main(String[] args) {

@@ -9,6 +9,8 @@ import java.util.List;
     when size reaches n , new size -> n/2 + 1
     add , set, size -> O(1)
     add(ind, val) , remove, clear -> O(n)
+
+    extraMethods: get, set, indexOf, lastIndexOf, listIterator, sublist
 */
 
 class arrayList {
@@ -64,6 +66,7 @@ class arrayList {
         for (Integer x : list) {
             System.out.println("element using for each : " + x);
         }
+
         Iterator<Integer> it = list.iterator();
         while (it.hasNext()) {
             System.out.println("using Iterator : " + it.next());
