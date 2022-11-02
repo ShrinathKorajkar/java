@@ -1,0 +1,33 @@
+Approaches -> 
+see dsalgo readme
+
+ARRAYS
+1. min num of merge op to make array palindrome: O(n)
+>> Two pointers: start, end 
+    if(arr[i] == arr[j]) i++, j--
+    else if(arr[i] > arr[j]) j--, arr[j] += arr[j + 1], ans++
+    else i++, arr[i] += arr[i - 1], ans++
+
+2. all possible combinations of r elements in given array: O(N ^ 2)
+   eg: {1,2,3,4} r=3 -> {[1,2,3],[1,2,4],[1,3,4],[2,3,4]}
+>> pass data[], start, end, index as arguments
+    if(index == r) print data[]
+    else for start till end
+    data[index] = arr[i]
+    call func with index+1, i+1 as start
+
+STRINGS
+1. given two strings find if they are anagrams(contains same characters)
+>> HashMap<char,int> map
+    if(s1.length() != s2.length()) return false
+    for(s1.length())
+        map.put(s1.charAt(i), map.getOrDefault(s1.charAt(i), 0) + 1)
+        map.put(s2.charAt(i), map.getOrDefault(s2.charAt(i), 0) - 1)
+    for(char c: map.keySet()) if(map.get(c) != 0) return false
+
+2. paranthesis match - (){}[]
+>> stack<char> stk
+    for(char c : str.toCharArray())
+        if(opening bracket) push corresponding closing
+        else if(stack.pop != c || stack.isEmpty()) return false
+    return stack.isEmpty()

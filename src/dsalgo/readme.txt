@@ -1,9 +1,11 @@
-Given question :            timeComplexity          spaceComplexity
-1. brute force                  O(N^2)                  O(1)
-2. Sortings                     O(nlogN)                O(1)
-3. using space                  O(N)                    O(N)
+Given question :                timeComplexity          spaceComplexity
+1. Brute force                      O(N^2)                  O(1)
+2. Sorting                         O(nlogN)                 O(1)
+3. using space                      O(N)                    O(N)
     (dp, hashmap, array)
-4. in linear time/space         O(N)                    O(1)
+4. in linear time/space             O(N)                    O(1)
+    using Pointers
+    using variable storage
 
 
 

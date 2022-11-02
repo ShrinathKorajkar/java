@@ -7,6 +7,7 @@ package dsalgo.arrays;
 */
 public class rainWaterTrap {
 
+    // USING SPACE
     private static int rainWater(int[] arr) {
         int n = arr.length;
         int left[] = new int[n];
@@ -29,9 +30,37 @@ public class rainWaterTrap {
         return ans;
     }
 
+    // USING 2 POINTERS (constant space)
+    private static int trapWater(int[] height) {
+        if (height == null || height.length == 0)
+            return 0;
+        int left = 0, right = height.length - 1;
+        int maxLeft = 0, maxRight = 0;
+        int totalWater = 0;
+        while (left < right) {
+            if (height[left] < height[right]) {
+                if (height[left] >= maxLeft) {
+                    maxLeft = height[left];
+                } else {
+                    totalWater += maxLeft - height[left];
+                }
+                left++;
+            } else {
+                if (height[right] >= maxRight) {
+                    maxRight = height[right];
+                } else {
+                    totalWater += maxRight - height[right];
+                }
+                right--;
+            }
+        }
+        return totalWater;
+    }
+
     public static void main(String[] args) {
 
         int[] arr = { 4, 3, 2, 4, 1, 2, 3, 4 };
         System.out.println(rainWater(arr));
+        System.out.println(trapWater(arr));
     }
 }

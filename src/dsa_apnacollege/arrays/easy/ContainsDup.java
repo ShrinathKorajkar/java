@@ -1,4 +1,4 @@
-package dsa_apnacollege.arrays;
+package dsa_apnacollege.arrays.easy;
 
 import java.util.Arrays;
 import java.util.HashSet;

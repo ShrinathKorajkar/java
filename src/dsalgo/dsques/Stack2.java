@@ -6,7 +6,7 @@ import java.util.Deque;
 /* 
     Q: Find max area in histogram
     input: histogram length (4, 2, 1, 5, 6, 3, 2, 4, 2)
-    output: 12
+    output: 12 (2 * 6 from right)
     O(n)
 */
 public class Stack2 {

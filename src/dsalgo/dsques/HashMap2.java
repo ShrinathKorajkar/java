@@ -3,7 +3,7 @@ package dsalgo.dsques;
 import java.util.HashMap;
 
 /* 
-    Q: find distinct elments in every window of size k             
+    Q: find no of distinct elments in every window of size k             
     input : [1, 2, 2, 1, 3, 1, 1, 3]    k = 4
     output : 2  3   3   2   2
     O(N)
