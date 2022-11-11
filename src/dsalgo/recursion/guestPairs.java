@@ -1,7 +1,7 @@
 package dsalgo.recursion;
 
 /*
- given no fo guests you can call them individually or in pairs to calculate no of ways 
+    given no fo guests you can call them individually or in pairs to calculate no of ways 
 */
 
 public class guestPairs {

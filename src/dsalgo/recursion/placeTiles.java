@@ -1,7 +1,7 @@
 package dsalgo.recursion;
 
 /*
-given 1 * m tile length we have to place it in n * m matrix and print ways
+    given 1 * m tile length we have to place it in n * m matrix and print ways
 */
 
 public class placeTiles {

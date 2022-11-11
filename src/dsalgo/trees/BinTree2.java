@@ -35,10 +35,6 @@ public class BinTree2 {
         ans = Math.max(ans, 1 + lh + rh);
         return Math.max(lh, rh) + 1;
     }
-
-    public static void main(String[] args) {
-
-    }
 }
 
 class Node {

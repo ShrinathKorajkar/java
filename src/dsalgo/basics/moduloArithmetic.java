@@ -7,8 +7,8 @@ package dsalgo.basics;
     (ans)^b = ()10^9 + 7
 
     to find power( O(log n) )
-    a^b = (a ^ 2)^b/2  if even 
-    else  (a * a ^ b-1);
+    a^b = (a ^ 2) ^ (b/2)  if even 
+    else  (a * (a ^ b-1));
 */
 
 public class moduloArithmetic {

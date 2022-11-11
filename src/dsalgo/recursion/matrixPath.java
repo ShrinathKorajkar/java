@@ -1,7 +1,8 @@
 package dsalgo.recursion;
 
-/* given matrix, starting point print available paths to reach end box
-O(2^(m + n))
+/* 
+    given matrix, starting point print available paths to reach end box
+    O(2^(m + n))
 */
 
 public class matrixPath {

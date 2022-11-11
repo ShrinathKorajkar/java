@@ -50,10 +50,6 @@ public class BinTree1 {
     // TOP AND BOTTOM -> TreeMap -> store level and data in queue and map, store in
     // map if key not present
 
-    public static void main(String[] args) {
-
-    }
-
     class Node {
         Node left, right;
         int data;

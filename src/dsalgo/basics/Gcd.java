@@ -1,5 +1,6 @@
 package dsalgo.basics;
 /*
+    HCF
     gcd(a,b) = gcd(a-b, b); if b < a else gcd(a, b - a) -> return no which is not zero at last
 */
 

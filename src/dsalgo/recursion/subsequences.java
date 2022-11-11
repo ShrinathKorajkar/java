@@ -3,10 +3,10 @@ package dsalgo.recursion;
 import java.util.HashSet;
 
 /*
-we have a string we have to find all subsequences i.e "abc" -> 'abc', 'ab.', '.bc', 'a.c', 'a..', '.b.', '..c', '...'
-time -> O(2^n)
+    we have a string we have to find all subsequences i.e "abc" -> 'abc', 'ab.', '.bc', 'a.c', 'a..', '.b.', '..c', '...'
+    time -> O(2^n)
 
-also for subseq where duplicates not allowed
+    also for subseq where duplicates not allowed
 */
 
 public class subsequences {

@@ -1,6 +1,7 @@
 package dsalgo.backtracking;
+
 /*
-backtracking : smart recursion 
+    backtracking : smart recursion 
 */
 
 import java.util.*;

@@ -65,10 +65,6 @@ public class BinTree3 {
         return Math.max(lh, rh) + 1;
     }
 
-    public static void main(String[] args) {
-
-    }
-
     class Node {
         Node right, left;
         int data;
