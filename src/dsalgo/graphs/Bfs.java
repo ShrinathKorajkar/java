@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 /* 
+    Queue
     1. Find min dist from source to dest
     2. Find no of connected components
     O(V + E) / O(N^2)

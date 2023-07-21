@@ -36,6 +36,13 @@ public class Strings {
         sb.append(" phoenix");
         System.out.println(sb);
         System.out.println(sb.reverse());
+
+        str = "hello shri";
+        String[] strarr = str.split(" ");
+        for (String s : strarr) {
+            System.out.print(s + "@");
+        }
+        System.out.println();
     }
 
 }

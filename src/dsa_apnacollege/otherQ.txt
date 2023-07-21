@@ -1,6 +1,7 @@
 Approaches -> 
 see dsalgo readme
 
+
 ARRAYS
 1. min num of merge op to make array palindrome: O(n)
 >> Two pointers: start, end 
@@ -15,6 +16,8 @@ ARRAYS
     else for start till end
     data[index] = arr[i]
     call func with index+1, i+1 as start
+
+
 
 STRINGS
 1. given two strings find if they are anagrams(contains same characters)
@@ -31,3 +34,81 @@ STRINGS
         if(opening bracket) push corresponding closing
         else if(stack.pop != c || stack.isEmpty()) return false
     return stack.isEmpty()
+
+
+
+BACKTRACKING
+1. longest, shortest route to dest in matrix
+2. All possible combinations of numbers in array whose sum = x
+
+
+
+LINKEDLIST
+1. Sort list with 0, 1, 2
+>> count no of 0, 1, 2
+    traverse list and change values acc to count
+    
+
+
+STACK N QUEUES
+1. Special Stack which has getMin() that return the min in O(1)
+>> maintain temp stack which stores min val till now
+    if elem to insert(special stack) < currElem on tempStack
+        push it into tempStack
+    if elem pop(special stack) == currElem on tempStack
+        pop from tempStack also
+    if getMin() called return top of tempStack
+
+2. Queue for finding first non-repeating char in stream
+>> maintain 26 [] of letters
+    if queue front is present in arr then remove that
+
+3. Find Maximum of minimum for every window size in given array
+eg: {10 ,20, 30, 50, 10, 70, 30}    -> Wsize 1 -> op = 70
+    {(10, 20), (20, 30), (30, 50), ...(70, 30)} -> {10, 20, 30, ...30} => Wsize = 2 -> op = 30
+>> for each window size
+    store min of window in last iteration
+    decrease 1 size after every iteration
+i.e -> {10, 20, 30, 50, 10, 70, 30}
+         {10, 20, 30, 10, 10, 30}
+           {10, 20, 10, 10, 10}
+            
+
+
+BINARY TREE
+1. Diagonal traversal of tree
+>> Use Q to store left Nodes and while(node != null)
+    print node.data
+    if node.left != null -> add it to Q
+    if node.right != null -> node = node.right
+    else if Q.isNotEmpty -> node = Q.peek(), Q.remove()
+         else node = null
+        
+2. Binary Tree to DLL (inorder traversal)
+>> if(root == null) -> return
+    left = root.left; right = root.right
+    recursion for root.left
+    if(head == null) -> head = root;
+    root.left = tail; 
+    if(tail != null) -> tail.right = root;
+    tail = root;
+    recursion for root.right
+
+
+
+HEAPS
+1. Connect n Ropes with min cost
+>> create min heap pq and push all elements in it
+    extract two elements add and push
+    maintain total cost variable
+
+
+
+HASHING
+1. Distinct elements in every window of size k
+>> Create hashmap with element -> count
+    push first k elements and print size of map
+    for k+1 to arr.length
+        count of i - k element --
+        if(count of i - k == 0) -> remove it
+        add i th element in map

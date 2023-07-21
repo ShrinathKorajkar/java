@@ -4,7 +4,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 /* 
-    extra : put, get, putAll, containsKey, containsValue, keySet, values, entrySet -> getKey, getValue
+    extra : put, get, putAll, containsKey, containsValue, keySet, 
+            values, replace, getOrDefault, putIfAbsent
+    entrySet -> getKey, getValue
+
+    struct node {
+        key
+        value
+        hash
+        node *next
+    }
+    linked list maxlen = 8 (BST) => O(1 + log(len))
 */
 
 public class hashMap {

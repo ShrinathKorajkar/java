@@ -17,8 +17,15 @@ public class arraysClass {
         // used to fill all elements with val
         Arrays.fill(numbers2, 19);
 
+        int[] temp = Arrays.copyOfRange(numbers, 0, 5);
+        System.arraycopy(numbers, 0, temp, 0, 5);
+
         for (int i : numbers2) {
             System.out.println(i + " ");
         }
+
+        Character.isDigit('1');
+        Character.getNumericValue('1');
+        Integer.parseInt("2");
     }
 }
